@@ -1,0 +1,20 @@
+Interfaces are nothing but a way to describe the behavior of a class without committing to the implementation of the class. In C++ programming there is no built-in concept of interfaces. In order to create an interface, we need to create an abstract class 
+which is having only pure virtual methods. 
+In C++, Interfaces are also called pure abstract classes.
+
+#include <iostream> 
+#include <string> 
+using namespace std; 
+  
+// Interface(Abstract class  
+// with pure virtual function) 
+class websiteName  
+{ 
+  public: 
+    virtual string getName() = 0; 
+}; 
+
+An abstract class is a class that is specially designed to be used as a base class.
+Abstract class must have at least one pure virtual function. It may have variables and 
+normal functions. The derived classes of an abstract class must implement
+all the pure virtual functions of their base class or else they too become abstract.
